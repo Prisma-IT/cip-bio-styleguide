@@ -1,1 +1,44 @@
+@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+@import "~prismjs/themes/prism";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --main-blue: #24599E;
+    --background-blue: #E8F1FD;
+    --grey: #707070;
+    --normal: 80em;
+    --medium: 70em;
+    --small: 45em;
+    --extra-small: 20em;
+    --dark-grey: #4B4B4B;
+}
+*{
+    outline: none;
+}
+pre{
+    background-color: #F8F8F8;
+    border-radius: 20px;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+}
+.card-for-all .icon{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: var(--main-blue);
+    border-radius: 50%;
+}
+
+.blue{
+    color: var(--main-blue)!important;
+}
+
+input{
+    outline: none;
+}

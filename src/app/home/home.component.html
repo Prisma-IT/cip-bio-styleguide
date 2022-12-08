@@ -1,0 +1,58 @@
+<app-navigation></app-navigation>
+<div class="container" style="max-width: var(--normal-size);margin: 0 auto;display: flex;padding: 0;">
+    <div class="left-content" style="width: 15%;">
+        <h1>Pages</h1>
+        <ul>
+            <li [routerLink]="['/full-width']">Full-width</li>
+        </ul>
+        <h1>Components</h1>
+        <ul>
+            <li (click)="changeMenu('navigation')">Navigation</li>
+            <li (click)="changeMenu('banner')">Banner with carousel</li>
+            <li>For all, by all</li>
+            <li>Products</li>
+            <li>Also Watch</li>
+        </ul>
+    </div>
+    <div class="right-content" style="width: 85%;padding: 1vh;">
+        <div *ngIf="menu == 'navigation'">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, consequuntur eaque id nostrum consequatur perferendis minima at unde, dolore, voluptates quis! Iure officiis laborum ab, in expedita quas maxime officia.</p>
+            <app-navigation (passSnippets)="passSnippets($event)"></app-navigation>
+            <div style="display: flex;">
+                <button *ngIf="snippetHTML" (click)="changeSnippet('html')">html</button>
+                <button *ngIf="snippetCSS" (click)="changeSnippet('css')">css</button>
+            </div>
+            <pre *ngIf="snippet == 'html'" style="position: relative;">
+                
+                <code  class="language-html">
+    
+                    {{snippetHTML}}
+                </code>
+            </pre>
+            <pre *ngIf="snippet == 'css'">
+                <div style="display: flex;position: absolute; left: 5px;">
+                    <button (click)="changeSnippet('html')">html</button>
+                    <button (click)="changeSnippet('css')">css</button>
+                </div>
+                <code  class="language-css">
+    
+                    {{snippetCSS}}
+                </code>
+            </pre>
+        </div>
+        <div *ngIf="menu == 'banner'">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, consequuntur eaque id nostrum consequatur perferendis minima at unde, dolore, voluptates quis! Iure officiis laborum ab, in expedita quas maxime officia.</p>
+            <app-carousel (passSnippets)="passSnippets($event)"></app-carousel>
+            <!-- <pre style="position: relative;" class="language-html"> -->
+                <code *ngIf="snippet == 'html'" class="language-html">
+                    {{snippetHTML}}
+                </code>
+            <!-- </pre> -->
+            <pre style="position: relative;">
+                <code *ngIf="snippet == 'css'" class="language-css">
+                    {{snippetCSS}}
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>

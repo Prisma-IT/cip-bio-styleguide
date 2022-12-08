@@ -1,0 +1,154 @@
+
+<div class="container-navigation" style="">
+    <div class="menu-container" style="">
+        <div class="logo" ><img src="./../../../assets/images/cip_logo.svg" alt="cip logo"></div>
+            <ul class="menu">
+                <li class="menu-item d-menu">
+                    <div class="dropdown">
+                        <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Producten
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">BIO en Thema-uitwerkingen</a></li>
+                          <li><a class="dropdown-item" href="#">Secure Software</a></li>
+                          <li><a class="dropdown-item" href="#">Aanbesteden en inkopen</a></li>
+                          <li><a class="dropdown-item" href="#">Keten producten</a></li>
+                          <li><a class="dropdown-item" href="#">Ethiek, Awareness en meer</a></li>
+                          <li><a class="dropdown-item" href="#">Privacy bescherming</a></li>
+                        </ul>
+                      </div>
+                </li>
+                <li class="menu-item">Workshop & games</li>
+                <li class="menu-item">Uitgelicht</li>
+                <li class="menu-item">Over CIP</li>
+                <li class="menu-item">
+                    <div class="dropdown">
+                        <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Bekijk ook
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Conferenties</a></li>
+                          <li><a class="dropdown-item" href="#">Jaarverslagen</a></li>
+                          <li><a class="dropdown-item" href="#">Word lid van cip.pleio</a></li>
+                          <li><a class="dropdown-item" href="#">BIO-overheid</a></li>
+                          <li><a class="dropdown-item" href="#">Probleem melden</a></li>
+                          <li><a class="dropdown-item" href="#">Handige links</a></li>
+                        </ul>
+                      </div>
+                </li>
+                <li class="menu-item">Contact</li>
+                <li class="blue menu-item">English Website</li>
+            </ul>
+        <div class="search">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text">
+                <button class="btn-searchbar"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+        <div class="search-small">
+            <div class="search-cont-small closed">
+                <i (click)="searchBar($event)" id="icon-small-search" class="fa-solid fa-magnifying-glass"></i>
+                <input id="input-small-search" type="text">
+                <button id="btn-small-search" class="btn-searchbar"><i id="icon-small-search" class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+        <div style="display: flex;justify-content: flex-end;">
+            <div id="hamburger-menu" (click)="toggleMenu()" class="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="pop-menu">
+                <div class="blue-left"></div>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                          <button class="acc-btn collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Producten <i class="fa-solid fa-caret-down"></i>
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                          <div class="accordion-body">
+                                <ul >
+                                    <li><a href="#">BIO en Thema-uitwerkingen</a></li>
+                                    <li><a href="#">Secure Software</a></li>
+                                    <li><a href="#">Aanbesteden en inkopen</a></li>
+                                    <li><a href="#">Keten producten</a></li>
+                                    <li><a href="#">Ethiek, Awareness en meer</a></li>
+                                    <li><a href="#">Privacy bescherming</a></li>
+                                </ul>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="item-no-accordion">
+                      <h2>
+                        <a class="acc-btn ">
+                            Workshop & games
+                        </a>
+                      </h2>
+                    </div>
+                    <div class="item-no-accordion">
+                        <h2>
+                          <a class="acc-btn ">
+                            Uitgelicht
+                          </a>
+                        </h2>
+                    </div>
+                    <div class="item-no-accordion">
+                        <h2>
+                          <a class="acc-btn ">
+                            Over CIP
+                          </a>
+                        </h2>
+                      </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                            Bekijk ook <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <ul >
+                                <li><a href="#">Conferenties</a></li>
+                                <li><a href="#">Jaarverslagen</a></li>
+                                <li><a href="#">Word lid van cip.pleio</a></li>
+                                <li><a href="#">BIO-overheid</a></li>
+                                <li><a href="#">Probleem melden</a></li>
+                                <li><a href="#">Handige links</a></li>
+                              </ul>
+                        </div>
+                      </div>
+                      <div class="item-no-accordion">
+                        <h2>
+                          <a class="acc-btn ">
+                            Contact
+                          </a>
+                        </h2>
+                      </div>
+                      <div class="item-no-accordion">
+                        <h2>
+                          <a class="acc-btn blue">
+                            English Website
+                          </a>
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                <!-- <ul>
+                    <li class="menu-item">Producten</li>
+                    <li class="menu-item">Workshop & games</li>
+                    <li class="menu-item">Uitgelicht</li>
+                    <li class="menu-item">Over CIP</li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    
+
+    
+</script>

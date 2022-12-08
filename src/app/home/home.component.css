@@ -1,0 +1,25 @@
+pre{
+    max-height: 40vh;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 10%;
+}
+h1{
+    color: var(--main-blue);
+    font-size: 2.5vmin;
+    font-weight: 700;
+    padding-bottom: 3%;
+    border-bottom: 2px solid var(--grey);
+}
+.left-content{
+    padding: 2%;
+}
+li{
+    font-weight: 500;
+}
+li:hover{
+    color: var(--main-blue);
+    cursor: pointer;
+}
