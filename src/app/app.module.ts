@@ -11,6 +11,7 @@ import { HighlightService } from './services/highlight.service';
 import { ForAllComponent } from './shared/for-all/for-all.component';
 import { HomeProductsComponent } from './home-products/home-products.component';
 import { AlsoWatchComponent } from './shared/also-watch/also-watch.component';
+import { StayConnectedComponent } from './shared/stay-connected/stay-connected.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AlsoWatchComponent } from './shared/also-watch/also-watch.component';
     CarouselComponent,
     ForAllComponent,
     HomeProductsComponent,
-    AlsoWatchComponent
+    AlsoWatchComponent,
+    StayConnectedComponent
   ],
   imports: [
     BrowserModule,
