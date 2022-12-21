@@ -9,8 +9,8 @@
     background-color: white;
 }
 .menu-container{
-    width: var(--normal-size);
-    padding: 30px 40px;max-width: 0 auto;
+    width: var(--normal);
+    padding: 30px 5vmin;max-width: 0 auto;
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -34,6 +34,13 @@
     color: var(--dark-grey);
     font-weight: 600;
     font-size: 1.5vmin;
+    cursor: pointer;
+}
+.menu-item:hover,.menu button:hover{
+    color: var(--main-blue);
+}
+.blue.menu-item:hover{
+    text-decoration: underline;
 }
 .search{
     max-width: 20%;

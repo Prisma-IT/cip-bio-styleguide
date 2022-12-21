@@ -30,28 +30,70 @@
 .stay-connected-content-email-inputfield{
     flex-grow: 1;
     background-color: var(--background-blue);
+    border-radius: 10px;
+    padding: 0 5px;
 }
 .stay-connected-content-email-inputfield input{
     width: 100%;
     background-color: transparent;
     outline: none;
     border: 0;
-    border-radius: 10px;
+    
 }
 .stay-connected-content-title{
     font-size: 3vmin;
 }
 .stay-connected-content-email-label{
-    font-size: 1.1vmin;
+    font-size: 1.8vmin;
     color: var(--dark-grey);
     font-weight: 600;
 }
 
 .stay-connected-content-email-btn button{
-    background-color: var(--main-blue);
+    background-color: var(--btn-normal);
     border-radius: 10px;
     color: white;
     padding: 0.5vmin 2vmin;
     border: 0;
     font-weight: 600;
+}
+.stay-connected-content-email-btn button:hover{
+    background-color: var(--btn-hover);
+}
+
+@media only screen and (max-width: 70em) {
+    .stay-connected-logo-container{
+        height: 7.5vh;
+    }
+}
+@media only screen and (max-width: 50em) {
+    .stay-connected-box{
+        grid-gap: 0;
+    }
+    .stay-connected-logo-container{
+        display: none;
+    }
+    .container-stay-connected{
+        padding: 3vh 8vmin 5vh 8vmin;
+    }
+    .stay-connected-content-email-btn{
+        font-size: 3.5vmin;
+    }
+    .stay-connected-content-title {
+        font-size: 5vmin;
+    }
+    .stay-connected-content-email-label{
+        font-size: 3vmin;
+        margin-top: 2vmin;
+        margin-bottom: 0.5vmin;
+    }
+    .stay-connected-content-email-btn button{
+        border-radius: 7px;
+    }
+    .stay-connected-content-email-inputfield{
+        border-radius: 7px;
+    }
+    .stay-connected-content-email-input-container{
+        grid-gap:2vmin;
+    }
 }

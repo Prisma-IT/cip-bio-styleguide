@@ -12,6 +12,10 @@ import { ForAllComponent } from './shared/for-all/for-all.component';
 import { HomeProductsComponent } from './home-products/home-products.component';
 import { AlsoWatchComponent } from './shared/also-watch/also-watch.component';
 import { StayConnectedComponent } from './shared/stay-connected/stay-connected.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { ProductsPageComponent } from './products-page/products-page.component';
+import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { StayConnectedComponent } from './shared/stay-connected/stay-connected.c
     ForAllComponent,
     HomeProductsComponent,
     AlsoWatchComponent,
-    StayConnectedComponent
+    StayConnectedComponent,
+    FooterComponent,
+    ProductsPageComponent,
+    BreadcrumbsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

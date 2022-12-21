@@ -1,0 +1,19 @@
+.container-breadcrumbs{
+    width: 100%;
+    height: 100%;
+}
+.breadcrumbs{
+    width: var(--normal);
+    margin: 0 auto;
+    padding: 2vmin 5vmin;
+    color: var(--main-blue);
+}
+.breakcrumb-link{
+    text-decoration: none;
+    color: var(--main-blue);
+    cursor: pointer;
+}
+
+.breakcrumb-link:hover{
+    color: var(--dark-blue);
+}

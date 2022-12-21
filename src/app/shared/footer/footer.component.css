@@ -1,0 +1,51 @@
+.container-background-footer{
+    background-color: var(--main-blue);
+}
+
+.contaier-footer{
+    max-width: var(--normal);
+    padding: 5vmin 15vmin;
+    margin: 0 auto;
+}
+.lists-footer{
+    display: flex;
+    justify-content: center;
+}
+.footer-list{
+    width: 30%;
+    color: white;
+}
+
+.footer-list ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.footer-list h3{
+    font-size: 3vmin;
+    font-weight: 600;
+}
+
+.footer-list h3:hover{
+    text-decoration: underline;
+}
+.footer-list li a{
+    font-size: 2.5vmin;
+    text-decoration: none;
+    color: white;
+}
+.footer-list li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+@media only screen and (max-width: 70em) {
+    .footer-list {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 50em) {
+
+}

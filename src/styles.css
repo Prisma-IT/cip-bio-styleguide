@@ -12,6 +12,10 @@
     --small: 45em;
     --extra-small: 20em;
     --dark-grey: #4B4B4B;
+    --dark-blue:#0F3164;
+    --light-blue: #DEEAF6;
+    --btn-normal:#24599E;
+    --btn-hover:#2064BD;
 }
 *{
     outline: none;
@@ -24,16 +28,7 @@ pre{
 body{
     font-family: 'Barlow', sans-serif;
 }
-.card-for-all .icon{
-    height: 25px;
-    width: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    color: var(--main-blue);
-    border-radius: 50%;
-}
+
 
 .blue{
     color: var(--main-blue)!important;

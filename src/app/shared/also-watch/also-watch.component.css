@@ -38,6 +38,9 @@
     align-items: center;
     background-color: var(--main-blue);
 }
+.content-also-watch-card:hover .content-also-watch-card-top{
+    background-color: var(--dark-blue);
+}
 .content-also-watch-card-top img {
     height: 80%;
 }
@@ -57,14 +60,15 @@
 }
 
 .content-also-watch-card-text{
-    font-size: 1.1vmin;
+    font-size: 1.8vmin;
     color: var(--grey);
     flex: 1;
     overflow: hidden!important;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
+    line-height: 2.2vmin;
 }
 
 .content-also-watch-card-readmore a{
@@ -115,15 +119,16 @@
     }
 
     .content-also-watch-card-text{
-        font-size: 2.5vmin;
+        font-size: 3vmin;
         -webkit-line-clamp: 2;
+        line-height: 3vmin;
     }
     .content-also-watch-card-readmore a{
         font-size: 2vmin;
     }
 
     .content-also-watch-text{
-        font-size: 2.5vmin;
+        font-size: 3vmin;
     }
     .content-also-watch-title h1 {
         font-size: 5vmin;

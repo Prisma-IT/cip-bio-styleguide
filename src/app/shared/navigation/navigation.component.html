@@ -1,5 +1,5 @@
 
-<div class="container-navigation" style="">
+<nav class="container-navigation" style="">
     <div class="menu-container" style="">
         <div class="logo" ><img src="./../../../assets/images/cip_logo.svg" alt="cip logo"></div>
             <ul class="menu">
@@ -42,7 +42,8 @@
         <div class="search">
             <div class="search-container">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text">
+                <label style="display: none;" for="big_search">search</label>
+                <input id="big_search" aria-labelledby="big_search" type="text">
                 <button class="btn-searchbar"><i class="fa-solid fa-angle-right"></i></button>
             </div>
         </div>
@@ -146,9 +147,4 @@
         </div>
     </div>
 
-</div>
-<script>
-    
-
-    
-</script>
+</nav>

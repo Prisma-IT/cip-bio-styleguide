@@ -1,0 +1,117 @@
+.products-container{
+    width: 100%;
+    height: 100%;
+}
+
+.products-content{
+    max-width: var(--normal);
+    margin: 0 auto;
+    padding: 1vmin 5vmin;
+}
+.products-title{
+    display: flex;
+}
+.products-title h1{
+    font-size: 3vmin;
+    color: var(--main-blue);
+    font-weight: 700;
+    border-bottom: 1px solid var(--main-blue);
+    margin-bottom: 3vmin;
+    padding-bottom: 2vmin;
+}
+.products-text p{
+    font-size: 1.8vmin;
+    font-weight: 500;
+    color: var(--grey);
+    line-height: 3.5vmin;
+}
+.products-filters-container{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.dropdown-products{
+    width: 100%;
+}
+.products-dropdown-btn{ 
+    background-color: var(--light-blue);
+    color: var(--main-blue);
+    font-weight: 600;
+    font-size: 1.6vmin;
+    border: 0;
+    width: 100%;
+    padding: 0.7vmin 0;
+    border-radius: 5px;
+}
+.products-dropdown-btn:hover,.products-dropdown-btn.show{
+    background-color: var(--main-blue);
+    color: white;
+}
+.products-cards{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 3vmin 3vmin;
+    margin-top: 3vmin;
+}
+.products-prod-card-image-container{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.products-prod-card-image{
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1,1);
+    transition: all 300ms ease-in;
+}
+.products-prod-card-text{
+    padding: 1vmin 0 4vmin 0;
+    position: relative;
+}
+.products-prod-card-type{
+    font-size: 1.4vmin;
+    color: var(--grey);
+}
+.products-prod-card-title{
+    font-size: 1.8vmin;
+    line-height: 2.5vmin;
+    min-height: 5vmin;
+    font-weight: 600;
+    color: var(--dark-grey);
+    flex: 1;
+    overflow: hidden!important;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.products-prod-card-readmore{
+    font-size: 1.5vmin;
+    color: var(--main-blue);
+    text-decoration: underline;
+    position: absolute;
+    bottom: 1vmin;
+}
+.products-prod-card{
+    
+}
+
+.products-prod-card:hover .products-prod-card-image{
+    transform: scale(1.2,1.2)
+}
+
+.products-prod-card:hover .products-prod-card-title{
+    color: var(--main-blue);
+}
+
+.header-filter-products{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vmin;
+    border-bottom: 1px solid var(--light-blue);
+}
+.dropdown-products .dropdown-menu{
+    width: 100%;
+}

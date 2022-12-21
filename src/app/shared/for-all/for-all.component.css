@@ -28,6 +28,20 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     overflow: hidden;
 }
+.card-for-all .icon{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: var(--main-blue);
+    border-radius: 50%;
+    margin-top: auto;
+    margin-bottom: 1vmin;
+    margin-left: 1vmin;
+
+}
 .card-for-all .icon {
     min-height: 25px;
     min-width: 25px;
@@ -43,8 +57,11 @@
     display: flex;
     padding: 1vmin 2vmin 1vmin 2vmin;
     background-color: rgba(0, 0, 0, 0.475);
-    align-items: end;
+    align-items: start;
     width: 100%;
+    min-height: 34%;
+    margin-bottom: 0;
+    transition: all 500ms ease-in;
 }
 .text-for-all{
     flex-grow: 1;
@@ -53,14 +70,35 @@
     font-size: 1.5vw;
     font-weight: 700;
 }
-.text-for-all .summary{
+.infos-for-all .text-for-all .summary{
     font-size: 0.8vw;
+    overflow: hidden!important;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.5vmin;
+    max-height: 3vmin;
+    transition: all 400ms ease-in;
+}
+/* .infos-for-all:hover .text-for-all{
+    margin-bottom: 5%;
+}*/
+.infos-for-all:hover .text-for-all .summary{
+    line-height: 1.5vmin;
+    max-height: 4.5vmin;
+    -webkit-line-clamp: 3;
+} 
+.infos-for-all:hover {
+    min-height: 45%;
 }
 .mini-card-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:1.5vmin;
+   
 }
+
 .mini-card{
     background-color: white;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -81,6 +119,7 @@
     background-position: center 20%;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 .mini-card .bottom{
     height: 50%;
@@ -89,6 +128,13 @@
     left: 0;
     right: 0;
     padding: 1vmin 2vmin;
+    z-index: 2;
+    background-color: white;
+    transition: height 500ms;
+}
+
+.mini-card:hover .bottom{
+    height: 65%;
 }
 .mini-card .bottom .title{
     font-weight: 700;
@@ -97,14 +143,23 @@
     margin-bottom: 1vmin;
 }
 .mini-card .bottom .text-sumary{
-    font-size: 1.1vmin;
+    font-size: 1.8vmin;
     color: var(--grey);
     flex: 1;
     overflow: hidden!important;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+    transition: all 1000ms ease-in;
+}
+.mini-card:hover .bottom .text-sumary{
     -webkit-line-clamp: 3; 
+}
+.link-container{
+    width: 100%;
+    background-color: white;
+    height: 2vmin;
 }
 .mini-card .bottom .link{
     font-size: 1.5vmin;
@@ -143,6 +198,9 @@
         font-size: 1.8vmin;
         margin-bottom: 0.2vmin;
     }
+    .link-container{
+        height: 2vmin;
+    }
     .mini-card .bottom .link{
         font-size: 1.2vmin;
         bottom: 0.8vmin;
@@ -172,6 +230,9 @@
     .mini-card .bottom .text-sumary{
         font-size: 2.5vmin;
         -webkit-line-clamp: 2;
+    }
+    .link-container{
+        height: 3vmin;
     }
     .mini-card .bottom .link{
         font-size: 2vmin;

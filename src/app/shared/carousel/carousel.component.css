@@ -12,19 +12,23 @@
 }
 .carousel-caption {
     position: absolute;
-    right: 40%;
+    right: 0;
+    padding-right: 40%;
     bottom: 0;
     top: 50%;
-    left: 3%;
-    padding-top: 0;
+    left: 0;
+    padding-left: 3%;
+    padding-top: 2%;
     padding-bottom: 0;
     color: #fff;
     text-align: left;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.2959558823529411) 0%, rgba(0,0,0,0.15029761904761907) 60%, rgba(0,0,0,0) 100%);
 }
 .carousel-caption.d-none{
     display: block!important;
 }
-h5{
+h2{
     font-weight: 700;
     font-size: 3.5vmin;
 }
@@ -80,10 +84,11 @@ p{
         display: none;
     }
     .carousel-caption{
-        right: 30%;
+        right: 0;
+        padding: 0 15% 35% 3%;
         top: auto;
-        bottom: 50%;
-        transform: translateY(75%);
+        bottom: 0;
+        transform: none;
     }
     .menu-carousel{
         display: block;
@@ -95,3 +100,4 @@ p{
         margin-bottom: 1vmin;
     }
 }
+
