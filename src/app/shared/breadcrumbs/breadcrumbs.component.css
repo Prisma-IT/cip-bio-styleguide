@@ -3,7 +3,7 @@
     height: 100%;
 }
 .breadcrumbs{
-    width: var(--normal);
+    max-width: var(--normal);
     margin: 0 auto;
     padding: 2vmin 5vmin;
     color: var(--main-blue);

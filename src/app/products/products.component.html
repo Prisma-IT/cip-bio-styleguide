@@ -16,19 +16,35 @@
         </div>
         <div class="all-products">
             <div class="products-filters-container">
-                <div class="dropdown dropdown-products">
+                <div class="filter-product-desktop dropdown dropdown-products">
                     <button class="products-dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Bio en Thema-uitwerkingen
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <div onclick="event.stopPropagation()" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <div class="header-filter-products">
                             <div class="products-filters-selected"> 0 selected </div>
                             <div class="products-filters-clear-filter"> <a href="javascript:void(0)">Clear</a> </div>
                         </div>
-                        <ul (click)="$event.stopPropagation()" >
-                          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+                        <ul class="list-filters-products">
+                        <!-- you need to pass the id of the checkbox -->
+                          <li ><a onclick="toggleCheckbox(event,1)" class="dropdown-item" href="javascript:void(0)">
+                              <div class="filter-custom-checbox">
+                                 <!-- this id needs to match the id you are passing up -->  
+                                <input id="1" type="checkbox" class="filter-products-fil-checkbox" name="bio-en-thema-uitwerkingen" value="CIP-casts " style="display: none;">
+                                  <div class="filter-custom-checbox-box">
+                                    <div class="checked">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="filter-products-fil-name">CIP-casts Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odio nulla ut non consequuntur vel in magni molestiae, sit ipsam pariatur et, molestias tenetur nesciunt quam culpa iure hic unde.</div>
+                              <div class="filter-products-fil-number">2</div>
+                          </a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="unique-filter-products">
+                    
                 </div>
             </div>
             <div class="products-cards">

@@ -16,6 +16,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ProductsPageComponent } from './products-page/products-page.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 import { ProductsComponent } from './products/products.component';
+import { FeaturedComponent } from './featured/featured.component';
+import { FeaturedPageComponent } from './featured-page/featured-page.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ProductsComponent } from './products/products.component';
     FooterComponent,
     ProductsPageComponent,
     BreadcrumbsComponent,
-    ProductsComponent
+    ProductsComponent,
+    FeaturedComponent,
+    FeaturedPageComponent
   ],
   imports: [
     BrowserModule,

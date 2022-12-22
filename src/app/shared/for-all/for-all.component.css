@@ -81,9 +81,7 @@
     max-height: 3vmin;
     transition: all 400ms ease-in;
 }
-/* .infos-for-all:hover .text-for-all{
-    margin-bottom: 5%;
-}*/
+
 .infos-for-all:hover .text-for-all .summary{
     line-height: 1.5vmin;
     max-height: 4.5vmin;

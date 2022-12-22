@@ -9,8 +9,9 @@
     background-color: white;
 }
 .menu-container{
-    width: var(--normal);
-    padding: 30px 5vmin;max-width: 0 auto;
+    max-width: var(--normal);
+    padding: 30px 5vmin;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     font-weight: 600;
